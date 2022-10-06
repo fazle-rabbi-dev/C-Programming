@@ -1,35 +1,32 @@
 #include <stdio.h>
 
-int sum()
-{  
-   int num_a,num_b,r;
-   printf("Enter number of a: ");
-   scanf("%d", &num_a);
-   printf("Enter number of b: ");
-   scanf("%d", &num_b);
-   r = num_a + num_b;
-   return r;
-}
+/*
+Author: Fazle Rabbi
+Date  : 06 October, 2022
+*/
 
-// declaration:
-void printStar();
+int factorial(number)
+{
+   if(number == 0 || number == 1){
+      return 1;
+   }
+   else{
+      return (number * factorial(number - 1));
+      /*
+         number = 3;
+         3 * factorial(2);
+         3 * 2 * factorial(1);
+         3 * 2 * 1; --> Since, if condition exist!
+      */
+   }
+}
 
 int main()
 {  
-   int result;
-   printf("Hello World!\n");
-   result = sum();
-   printf("The result = %d\n", result);
-   printStar(400);
+   int r;
+   r = factorial(3);
+   printf("The result is = %d", r);
    // End of program
    printf("\n");
    return 0;
-}
-
-// definition:
-void printStar(int num)
-{
-   for (int i = 0; i < num; i++) {
-      printf("%c", '*');
-   }
 }
