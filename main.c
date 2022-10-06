@@ -1,23 +1,35 @@
 #include <stdio.h>
 
+int sum()
+{  
+   int num_a,num_b,r;
+   printf("Enter number of a: ");
+   scanf("%d", &num_a);
+   printf("Enter number of b: ");
+   scanf("%d", &num_b);
+   r = num_a + num_b;
+   return r;
+}
+
+// declaration:
+void printStar();
+
 int main()
 {  
-   int a = 0;
-   int num;
-   for (int i = 0; i < 4; i++) {
-      printf("%d\n", i);
-      for (int j = 0; j < 4; j++) {
-         printf("Enter 0 for exit: ");
-         scanf("%d", &num);
-         printf("You have entered %d\n", num);
-         if(num == 0){
-            // goto end;
-            break;
-         }
-      }
-   }
-   end:
+   int result;
+   printf("Hello World!\n");
+   result = sum();
+   printf("The result = %d\n", result);
+   printStar(400);
    // End of program
    printf("\n");
    return 0;
+}
+
+// definition:
+void printStar(int num)
+{
+   for (int i = 0; i < num; i++) {
+      printf("%c", '*');
+   }
 }
