@@ -1,11 +1,13 @@
 #include <stdio.h>
 
+// Pointers:
 int main()
 {
-   // creating a string...
-   char name[30];
-   printf("Type your name: ");
-   scanf("%s", name);
-   printf("Hey %s, welcome to my awesome program 😍\n.", name);
+   int a = 10;
+   int *ptra = &a; // --> & = address of operator
+   printf("The value of a = %d\n", a);
+   printf("The pointer address of a = %p\n", ptra);
+   printf("The value of a = %d\n", *ptra);
+   printf("The address of pointer = %p\n", &ptra);
    return 0;
 }
