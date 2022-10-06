@@ -1,46 +1,28 @@
 #include <stdio.h>
 
-/*
-Author: Fazle Rabbi
-Date  : 06 October, 2022
-*/
+void sayHello();
 
 int main()
-{  
-   // // Basic Array:
-   int marks[4];
-   marks[0] = 50;
-   marks[1] = 60;
-   marks[2] = 70;
-   marks[3] = 80;
+{
+   // Easy Way of Creating Strings:
+   char text[] = "Hello World";
+   text[0] = 'J';
+   printf("%s\n", text);
    
-   // printf("%d", marks[3]);
    
-   // 1D Array:
-   int marks2[3] = {10,20,40};
-   for (int i = 0; i < 3; i++) {
-      printf("The value of element %d is = %d\n", i,marks2[i]);
-   }
+   // Another Way of Creating Strings:
+   char greetings[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
+   printf("%s\n", greetings);
+   printf("%d\n", sizeof(greetings)); 
    
-   printf("\n");
+   sayHello();
    
-   // 2D Array:
-   int results[6][4] = {
-      {66,67,78,99},
-      {76,27,48,69},
-      {76,27,48,69},
-      {76,27,48,69},
-      {76,27,48,69},
-      {76,27,48,69},
-   };
-   for (int i = 0; i < 6; i++) {
-      for (int j = 0; j < 4; j++) {
-         printf(" %d", results[i][j]);
-      }
-      printf("\n");
-   };
-   
-   // End of program
-   printf("\n");
    return 0;
 }
+
+
+void sayHello(){
+   char name[] = "Karim";
+   printf("Hello %s. How are you?\n", name);
+}
+   
