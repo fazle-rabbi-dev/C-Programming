@@ -1,30 +1,20 @@
 #include <stdio.h>
 
-void demo(int arr[])
+void startPrint(int num)
 {
-   // printf("%d\n", arr[0]);
-   for (int i = 0; i < 3; i++) {
-      printf("%d\n", arr[i]);
-   }
-   arr[0] = 99;
-}
-
-void demo2(int* array,int* a)
-{
-   printf("%p\n",array);
-   printf("%p\n",a);
-   for (int i = 0; i < 9; i++) {
-      printf("Value is = %d\n", array[i]);
+   for(int i=0;i<num;i++){
+      for(int j=0;j<=num-i-1;j++){
+         printf("*");
+      }
+      printf("\n");
    }
 }
 
 int main()
 {
-   int arr[] = {10,20,30,40,50,60,70,80,90};
-   // printf("Before the value at index 0: %d\n", arr[0]);
-   // demo(arr);
-   // printf("After the value at index 0: %d\n", arr[0]);
-   int a = 67;
-   demo2(arr,&a);
+   int num;
+   printf("Enter an amount for print the start:");
+   scanf("%d", &num);
+   startPrint(num);
    return 0;
 }
