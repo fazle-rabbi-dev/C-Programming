@@ -1,13 +1,19 @@
 #include <stdio.h>
 
-// Pointers:
+void changeValue(int *a, int *b)
+{
+   int tmp = *a;
+   *a = *a + *b;
+   *b = tmp - *b;
+}
+
 int main()
 {
-   int a = 10;
-   int *ptra = &a; // --> & = address of operator
-   printf("The value of a = %d\n", a);
-   printf("The pointer address of a = %p\n", ptra);
-   printf("The value of a = %d\n", *ptra);
-   printf("The address of pointer = %p\n", &ptra);
+   int a = 4,b = 3;
+   printf("The value of a is = %d\n", a);
+   printf("The value of b is = %d\n", b);
+   changeValue(&a, &b);
+   printf("The value of a is = %d\n", a);
+   printf("The value of b is = %d\n", b);
    return 0;
 }
