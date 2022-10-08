@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-struct FacebookHackedAccount
+union FacebookHackedAccount
 {
    int id;
    char name[30];
