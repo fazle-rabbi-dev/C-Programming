@@ -1,20 +1,27 @@
 #include <stdio.h>
+#include <string.h>
 
-void startPrint(int num)
+void demo(char *marks)
 {
-   for(int i=0;i<num;i++){
-      for(int j=0;j<=num-i-1;j++){
-         printf("*");
-      }
-      printf("\n");
+   printf("%x\n", (int)marks);
+   for (int i = 0; i < strlen(marks); i++) {
+      printf("%d\n", *(marks+i));
    }
+   *marks = 99;
+   *(marks+1) = 70;
 }
 
-int main()
-{
-   int num;
-   printf("Enter an amount for print the start:");
-   scanf("%d", &num);
-   startPrint(num);
+int main(){
+   char marks[] = {10,20,30,40,50};
+   demo(marks);
+   printf("\n");
+   printf("%d\n", marks[0]);
+   printf("%d\n", marks[1]);
+   printf("\n");
+   printf("\n");
+   
+   for (int i = 0; i < strlen(marks); i++) {
+      printf("The value = %d\n", marks[i]);
+   }
    return 0;
-}
+};
