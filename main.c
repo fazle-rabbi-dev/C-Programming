@@ -1,33 +1,40 @@
 #include <stdio.h>
-#include <string.h>
 
-union FacebookHackedAccount
+void swap(int a,int b)
 {
-   int id;
-   char name[30];
-   char email[30];
-}victim1,victim2,victim3;
+   printf("Before the value of a is: %d\n", a);
+   printf("Before the value of b is: %d\n", b);
+   printf("\n");
+   int temp = a; // 10
+   a = b; // 10
+   b = temp;
+   printf("\n");
+   printf("After the value of a is: %d\n", a);
+   printf("After the value of b is: %d\n", b);
+}
 
-struct demo
+void arrRev(int arr[])
 {
-   int id;
-   int age;
-};
-
-struct demo person_1;
+   // 40,30,20,10
+   int temp;
+   for (int i = 0; i < 4/2; i++) {
+      temp = arr[i]; // 40,30
+      arr[i] = arr[3-i]; // 
+      arr[3-i] = temp;
+   }
+}
 
 int main(){
-   victim1.id = 10;
-   strcpy(victim1.name, "Adams Smith");
-   strcpy(victim1.email, "smith@gmail.com");
-   printf("Name of victim1: \e[1;35m %s\n\e[1;37m", victim1.name);
-   printf("Id of victim1: \e[1;35m %d\n\e[1;37m", victim1.id);
-   printf("Email of victim1: \e[1;35m %s\n", victim1.email);
+   // Swaping Variable:
+   int a = 10;
+   int b = 99;
+   swap(a,b);
    
-   printf("\n");
-   person_1.id = 10;
-   person_1.age = 37;
-   printf("The id of person_1 is: %d\n", person_1.id);
-   printf("The person\'s age is: %d\n", person_1.age);
+   int arr[] = {10,20,30,40};
+   // printf("%d\n", arr[0]);
+   arrRev(arr);
+   for (int i = 0; i < 4; i++) {
+      printf("%d\n", arr[i]);
+   }
    return 0;
 };
