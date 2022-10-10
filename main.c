@@ -2,52 +2,24 @@
 #include <stdlib.h>
 
 int main(){
-   int *ptr;
-   // Use of malloc:
-   // ptr = (int*) malloc(3*sizeof(int));
-   // for (int i = 0; i < 3; i++) {
-   //    printf("Enter the value of index: %d\n", i);
-   //    scanf("%d", &ptr[i]);
-   // }
+   // Dynamic memory alloaction:
+   int length,i=0,a,b;
+   char *id;
+   id = (char*) malloc((length+1) * sizeof(char));
    
-   // for (int i = 0; i < 5; i++) {
-   //    printf("The value of index %d is: %d\n", i,ptr[i]);
-   // }
-   
-   
-   ptr = (int*) calloc(3,sizeof(int));
-   for (int i = 0; i < 3; i++) {
-      printf("Enter the value of index: %d\n", i);
-      scanf("%d", &ptr[i]);
+   while(i < 3){
+      printf("Employe %d => Enter the number of length of employe id:",i+1);
+      scanf("%d", &length);
+      getchar();
+      printf("Enter the value of a:\n");
+      scanf("%d", &a);
+      getchar();
+      printf("Enter the value of b:\n");
+      scanf("%d", &b);
+      printf("Enter the id of employe %d:\n",i+1);
+      scanf("%s", id);
+      printf("The id of employe %d is: %s\n", i+1,id);
+      i++;
    }
-   
-   for (int i = 0; i < 3; i++) {
-      printf("The value of index %d is: %d\n", i,ptr[i]);
-   }
-   
-   
-   ptr = (int*) realloc(ptr,5*sizeof(int));
-   for (int i = 0; i < 5; i++) {
-      printf("Enter the value of index: %d\n", i);
-      scanf("%d", &ptr[i]);
-   }
-   
-   for (int i = 0; i < 5; i++) {
-      printf("The value of index %d is: %d\n", i,ptr[i]);
-   }
-   
-   free(ptr);
-   
-   ptr = (int*) malloc(3*sizeof(int));
-   for (int i = 0; i < 5; i++) {
-      printf("Enter the value of index: %d\n", i);
-      scanf("%d", &ptr[i]);
-   }
-   
-   for (int i = 0; i < 5; i++) {
-      printf("The value is : %d\n", ptr[i]);
-      // scanf("%d", &ptr[i]);
-   }
-      
    return 0;
 };
