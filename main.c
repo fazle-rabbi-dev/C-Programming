@@ -1,25 +1,34 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "tmp.c"
+
+/*
+Storage Class:
+--> Auto
+--> Extern
+--> Static
+--> Register
+*/
+
+int sum = 300;
+
+int demo(int a, int b)
+{
+   extern int sum;
+   // sum = a+b;
+   return sum;
+}
+
+void demo2()
+{
+   register int a = 20;
+   printf("A is: %d\n", a);
+}
 
 int main(){
-   // Dynamic memory alloaction:
-   int length,i=0,a,b;
-   char *id;
-   id = (char*) malloc((length+1) * sizeof(char));
-   
-   while(i < 3){
-      printf("Employe %d => Enter the number of length of employe id:",i+1);
-      scanf("%d", &length);
-      getchar();
-      printf("Enter the value of a:\n");
-      scanf("%d", &a);
-      getchar();
-      printf("Enter the value of b:\n");
-      scanf("%d", &b);
-      printf("Enter the id of employe %d:\n",i+1);
-      scanf("%s", id);
-      printf("The id of employe %d is: %s\n", i+1,id);
-      i++;
-   }
+   int a=10,b=20;
+   int sum = demo(a,b); 
+   printf("Sum is: %d\n", sum);
+   printf("X is: %d\n", x);
+   demo2();
    return 0;
 };
