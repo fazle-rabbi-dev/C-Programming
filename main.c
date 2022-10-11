@@ -1,34 +1,39 @@
 #include <stdio.h>
-#include "tmp.c"
+#include <stdlib.h>
 
-/*
-Storage Class:
---> Auto
---> Extern
---> Static
---> Register
-*/
-
-int sum = 300;
-
-int demo(int a, int b)
+int demoFunc()
 {
-   extern int sum;
-   // sum = a+b;
-   return sum;
+   int sum,a,b;
+   a = 20;
+   b = 30;
+   sum = a+b;
+   return &sum;
 }
 
-void demo2()
+int main()
 {
-   register int a = 20;
-   printf("A is: %d\n", a);
-}
-
-int main(){
-   int a=10,b=20;
-   int sum = demo(a,b); 
-   printf("Sum is: %d\n", sum);
-   printf("X is: %d\n", x);
-   demo2();
+   float a = 77.88;
+   int b = 99;
+   // Void Pointer:
+   void *ptr;
+   ptr = &a;
+   printf("The value of a is: %f\n", *((float*)ptr));
+   ptr = &b;
+   printf("The value of b is: %d\n", *((int*)ptr));
+   
+   // NULL Pointer:
+   ptr = NULL;
+   ptr = &a;
+   printf("%f\n", *((float*)ptr));
+   
+   // Dangling Pointer:
+   // 1. Deallocation of memory:
+   int *demo = malloc(5*sizeof(int));
+   free(demo);
+   printf("%p\n", demo);
+   
+   // 2. Returning local variable address:
+   int *result = demoFunc();
+   printf("-> %p\n", result);
    return 0;
 };
