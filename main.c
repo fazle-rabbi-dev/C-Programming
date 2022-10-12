@@ -1,39 +1,36 @@
+// 1 --> Documentation Section:
+/*
+Author: Fazle Rabbi
+Date: 12 Oct, 2022
+Purpose: demo
+*/
+
+// 2 --> Link Section:
 #include <stdio.h>
-#include <stdlib.h>
 
-int demoFunc()
-{
-   int sum,a,b;
-   a = 20;
-   b = 30;
-   sum = a+b;
-   return &sum;
-}
+// 3 --> Definition Section:
+#define PI 300
 
-int main()
-{
-   float a = 77.88;
-   int b = 99;
-   // Void Pointer:
-   void *ptr;
-   ptr = &a;
-   printf("The value of a is: %f\n", *((float*)ptr));
-   ptr = &b;
-   printf("The value of b is: %d\n", *((int*)ptr));
-   
-   // NULL Pointer:
-   ptr = NULL;
-   ptr = &a;
-   printf("%f\n", *((float*)ptr));
-   
-   // Dangling Pointer:
-   // 1. Deallocation of memory:
-   int *demo = malloc(5*sizeof(int));
-   free(demo);
-   printf("%p\n", demo);
-   
-   // 2. Returning local variable address:
-   int *result = demoFunc();
-   printf("-> %p\n", result);
+// 4 --> Global Declaration Section:
+int a = 10;
+int demo();
+
+// 5 --> Main Section:
+#include <stdio.h>
+
+int main(){
+   // 1 --> Declaration Part:
+   int num = 77;
+   float num2 = 27.8;
+   char name[15] = "Harry";
+   // 2 --> Execution Part:
+   printf("Hello World\n");
+   int value = demo();
+   printf("The value is: %d\n", value);
    return 0;
 };
+
+// Subprogram Section: 
+int demo(){
+   return 0;
+}
