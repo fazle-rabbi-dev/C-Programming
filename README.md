@@ -25,7 +25,7 @@
 
 `$ ./main`
 
-### 💡 C Snippets:
+### 🖌️ C Snippets:
 ```c
 // Boilerplate:
 #include <stdio.h>
