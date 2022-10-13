@@ -1,27 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>
+// Documentation Section:
+/*
+Author: Fazle Rabbi
+Date: 13 October, 2022
+Purpose: Demo!
+*/
 
-int main(){
-   int a,b;
-   scanf("%d %d", &a,&b);
-   printf("%d\n", a);
-   // getchar();
-   // scanf("%d", &b);
-   return 0;
-};
-
-
-// Boilerplate:
+// Link Section: (header file)
 #include <stdio.h>
 
-int main(){
-   
-   return 0;
-};
+// Definition Section:
+#define PI 4.14
 
+// Global Section:
+int num = 10;
 
-// Printf:
-printf("%d\n", );
-
-// Scanf:
-scanf("%", &);
+// Main Section:

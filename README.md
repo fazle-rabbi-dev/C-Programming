@@ -36,35 +36,35 @@ int main(){
 };
 ```
 
-```
+```c
 // Printf:
 printf("%d\n", );
 ```
 
-```
+```c
 // Scanf:
 scanf("%", &);
 ```
 
 ### 🚨 Topics To Learn In C Programming:
-1. [Basic Syntax]()
-2. [Data Types]()
-3. [Variables]()
-4. [Operators]()
-5. [Constant]()
-6. [Type Casting]()
-7. [Input & Output]()
-8. [Type Def]()
-9. [Control Statement]()
-10. [Functions]()
-10. [Recursion]()
-11. [Arrays]()
-12. [Strings]()
-13. [Pointers]()
-14. [Structure]()
-15. [Union]()
-16. [Header Files]()
-17. [Preprocessor]()
+1. [Basic Syntax](core/basic_syntax.md)
+2. [Data Types](core/data_types.md)
+3. [Variables](core/variables.md)
+4. [Operators](core/operators.md)
+5. [Constant](core/constant.md)
+6. [Type Casting](core/type_casting.md)
+7. [Input & Output](core/io.md)
+8. [Type Def](core/type_def.md)
+9. [Control Statement](core/control_statement.md)
+10. [Functions](core/functions.md)
+10. [Recursion](core/recursion.md)
+11. [Arrays](core/arrays.md)
+12. [Strings](core/strings.md)
+13. [Pointers](core/pointers.md)
+14. [Structure](core/structure.md)
+15. [Union](core/union.md)
+16. [Header Files](core/header_file.md)
+17. [Preprocessor](core/preprocessor.md)
 
 ### 🧠 C Programs:
 * <a href="">Basic C Program</a>
