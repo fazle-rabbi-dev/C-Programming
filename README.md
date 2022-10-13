@@ -2,7 +2,7 @@
 <img width="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZAlgHkql7nG25lT94-RidDusHcc3WQfWvuA&usqp=CAU" alt="" />
 </div>
 
-#### What is the usages of C Language:
+## What is the usages of C Language:
 * `Making Operating Systems`
 * `Making Games`
 * `Compiler & Interpreter`
@@ -14,7 +14,7 @@
 * *C is not object oriented language*
 * *C is the mother of programming language*
 
-#### Setup C Environment in Android Device:
+## Setup C Environment in Android Device:
 * <a href="">Download Termux App</a>
 * <a href="">Download Acode App</a>
 
