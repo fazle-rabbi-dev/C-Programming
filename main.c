@@ -1,16 +1,27 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(){
-   int i = 0,sum = 0,n;
-   scanf("%d", &n);
-   while(i < 1){
-      // printf("%d\n", i);
-         for (int j = 1; j < n; j+=2) {
-            sum = sum + j;
-            printf("%d\n", sum);
-         }
-      i++;
-   }
+   int a,b;
+   scanf("%d %d", &a,&b);
+   printf("%d\n", a);
+   // getchar();
+   // scanf("%d", &b);
    return 0;
 };
-// ১  ৪  ৯  ১৬ ২৫ – – – – n 
+
+
+// Boilerplate:
+#include <stdio.h>
+
+int main(){
+   
+   return 0;
+};
+
+
+// Printf:
+printf("%d\n", );
+
+// Scanf:
+scanf("%", &);
