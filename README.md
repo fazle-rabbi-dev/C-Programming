@@ -34,11 +34,14 @@ int main(){
    
    return 0;
 };
+```
 
-
+```
 // Printf:
 printf("%d\n", );
+```
 
+```
 // Scanf:
 scanf("%", &);
 ```
