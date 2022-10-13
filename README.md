@@ -1,5 +1,5 @@
 <div align="center">
-<h1><a href="#">C Programming</a></h1>
+<img width="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZAlgHkql7nG25lT94-RidDusHcc3WQfWvuA&usqp=CAU" alt="" />
 </div>
 
 ### 🤔 What is the usages of C Language:
