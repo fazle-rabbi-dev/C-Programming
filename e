@@ -1,2 +1,2 @@
-clang main.c
-./a.out
+gcc main.c -o main -lm
+./main
