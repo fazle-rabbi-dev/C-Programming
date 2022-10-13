@@ -1,21 +1,16 @@
 #include <stdio.h>
 
 int main(){
-   int a,b,c;
-   printf("Enter the two number:");
-   scanf("%d %d", &a,&b);
-   if(a > b){
-      c = a;
+   int i = 0,sum = 0,n;
+   scanf("%d", &n);
+   while(i < 1){
+      // printf("%d\n", i);
+         for (int j = 1; j < n; j+=2) {
+            sum = sum + j;
+            printf("%d\n", sum);
+         }
+      i++;
    }
-   else{
-      c = b;
-   }
-   again: if(c % a == 0 && c % b == 0){
-      printf("The (LCD) of %d and %d is:%d\n", a,b,c);
-   }
-   else{
-      c+=1;
-      goto again;
-   };
    return 0;
 };
+// ১  ৪  ৯  ১৬ ২৫ – – – – n 
