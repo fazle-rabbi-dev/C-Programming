@@ -47,27 +47,29 @@ scanf("%", &);
 ```
 
 ### 🚨 Topics To Learn In C Programming:
-1. [Basic Syntax](core/basic_syntax.md)
-2. [Data Types](core/data_types.md)
-3. [Variables](core/variables.md)
-4. [Operators](core/operators.md)
-5. [Constant](core/constant.md)
-6. [Type Casting](core/type_casting.md)
-7. [Input & Output](core/io.md)
-8. [Type Def](core/type_def.md)
-9. [Control Statement](core/control_statement.md)
-10. [Functions](core/functions.md)
-10. [Recursion](core/recursion.md)
-11. [Arrays](core/arrays.md)
-12. [Strings](core/strings.md)
-13. [Pointers](core/pointers.md)
-14. [Structure](core/structure.md)
-15. [Union](core/union.md)
-16. [Header Files](core/header_file.md)
-17. [Preprocessor](core/preprocessor.md)
+* [Basic Syntax](core/basic_syntax.md)
+* [Data Types](core/data_types.md)
+* [Variables](core/variables.md)
+* [Format Specifier](core/format_specifier.md)
+* [Escape Character](core/escape_character.md)
+* [Operators](core/operators.md)
+* [Constant](core/constant.md)
+* [Type Casting](core/type_casting.md)
+* [Input & Output](core/io.md)
+* [Type Def](core/type_def.md)
+* [Control Statement](core/control_statement.md)
+* [Functions](core/functions.md)
+* [Recursion](core/recursion.md)
+* [Arrays](core/arrays.md)
+* [Strings](core/strings.md)
+* [Pointers](core/pointers.md)
+* [Structure](core/structure.md)
+* [Union](core/union.md)
+* [Preprocessor](core/preprocessor.md)
+* [Header Files](core/header_file.md) 
 
 ### 🧠 C Programs:
-* <a href="">Basic C Program</a>
-* <a href="">Problem Solving</a>
+* <a href="basic_programs">Basic C Programs</a>
+* <a href="problem_solving/README.md">Problem Solving</a>
 
 
