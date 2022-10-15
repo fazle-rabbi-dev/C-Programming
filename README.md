@@ -47,7 +47,7 @@ scanf("%", &);
 ```
 
 ### 🚨 Topics To Learn In C Programming:
-* [Basic Syntax](core/#Basic)
+* [Basic Syntax](core/README.md/#Basic)
 * [Data Types](core/data_types.md)
 * [Variables](core/variables.md)
 * [Format Specifier](core/format_specifier.md)
