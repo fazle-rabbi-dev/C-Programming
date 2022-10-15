@@ -228,9 +228,7 @@ int main(){
 };
 ```
 
-<hr />
 <h3 align='center'><em>Series</em></h3>
-<hr />
 
 * ***1x2 + 2x3 .... n1+n2:***
 ```c
@@ -305,9 +303,7 @@ int main(){
 */
 ```
 
-<hr />
 <h3 align='center'><em>Pattern Printing</em></h3>
-<hr />
 
 ```c
 /*
