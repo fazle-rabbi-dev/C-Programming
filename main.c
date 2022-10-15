@@ -1,9 +1,23 @@
 #include <stdio.h>
-// #include "header/test.h"
-#include <custom.h>
 
 int main(){
-   printf("Hello %s\n", name);
-   printf("The sum is:%d\n", sum(10,30));
+   FILE *file;
+   char name[10];
+   int age;
+   file = fopen("demo.txt","a");
+   if(file == NULL){
+      printf("File doesn't exists.\n");
+   }
+   else{
+      printf("Enter your name:");
+      scanf("%s", name);
+      getchar();
+      printf("Enter your age:");
+      scanf("%d", &age);
+      // fputs("Hello Fazle Rabbi\n",file);
+      fprintf(file,"Name = %s\t||\tAge = %d\n",name,age);
+      printf("File writed successful.\n");
+      fclose(file);
+   }
    return 0;
 };
